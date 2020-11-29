@@ -4,16 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#121212"
     tools:context=".MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigtion"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@drawable/item_color"
-        app:itemTextColor="@drawable/item_color"
-        app:menu="@menu/nav_items"
-        />
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="100dp"
+        android:shadowColor="#FFFFFF"
+        android:text="from"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/bubblegum_sans"
+        android:paddingBottom="60dp"
+        android:shadowColor="#FFFFFF"
+        android:text="DARK PHOENIX"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </RelativeLayout>

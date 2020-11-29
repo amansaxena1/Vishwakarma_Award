@@ -31,10 +31,10 @@ public class LogIn extends AppCompatActivity {
 
         auth=FirebaseAuth.getInstance();
 
-        password=findViewById(R.id.password);
+        password=findViewById(R.id.username);
         email=findViewById(R.id.email);
-        btn_login=findViewById(R.id.btn_login);
-        tvsignUp=findViewById(R.id.tvsignUp);
+        btn_login=findViewById(R.id.btn_register);
+        tvsignUp=findViewById(R.id.tvlogin);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
                                          @Override

@@ -1,38 +1,35 @@
 package com.ayushtyagi.innovadia;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
 
-        BottomNavigationView bottom_navigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottom_navigation=findViewById(R.id.bottom_navigtion);
 
-        bottom_navigation.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+        Thread thread= new Thread(new Runnable() {
             @Override
-            public void onNavigationItemReselected(@NonNull MenuItem item) {
-                switch(item.getItemId()){
-                    case R.id.search_bar:
+            public void run() {
+                try {
+                    sleep(4000);
 
-                        break;
-                        case R.id.home_bar:
-                        break;
+                    Intent i = new Intent(MainActivity.this, LogIn.class);
+                    startActivity(i);
+                    finish();
 
-                    case R.id.profile_bar:
-                        break;
-
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-
             }
         });
+
+        thread.start();
     }
 }

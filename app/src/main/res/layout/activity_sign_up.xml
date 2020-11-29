@@ -4,25 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#242424"
     tools:context=".signIn">
 
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_below="@+id/imageView2"
         android:gravity="center_horizontal"
-        android:layout_marginTop="165dp"
+        android:orientation="vertical"
         android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create a new account"
-            android:textColor="#B5A1A1"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="Sign up"
+            android:textColor="#FAFAFA"
             android:textColorHint="#9C716E"
-            android:textSize="20dp"
+            android:textSize="30dp"
             android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:hint="Email"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#CCC7C7" />
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -30,15 +52,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Username" />
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Email" />
+            android:fontFamily="@font/bubblegum_sans"
+            android:hint="Username"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#CCC7C7" />
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -46,33 +64,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Password" />
-
+            android:fontFamily="@font/bubblegum_sans"
+            android:hint="Password"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#CCC7C7" />
 
         <Button
             android:id="@+id/btn_register"
-            android:layout_width="match_parent"
+            android:layout_width="152dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="sign_up"
+            android:layout_marginTop="20dp"
             android:background="@drawable/round"
-            />
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="SIGNUP"
+            android:textColor="#252323"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvlogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Already a user?LOG IN"
-            android:textColor="@color/colorAccent"
-            />
-
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="Already a User? Log in"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="italic" />
 
 
     </LinearLayout>
-
-
-
 
 
 </RelativeLayout>
