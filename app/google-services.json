@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "998733775212",
+    "firebase_url": "https://innovadia-675f6.firebaseio.com",
+    "project_id": "innovadia-675f6",
+    "storage_bucket": "innovadia-675f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998733775212:android:40753c8762864f8e04f349",
+        "android_client_info": {
+          "package_name": "com.ayushtyagi.innovadia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998733775212-4e1n447frsbf9kpnrsm327vcs52ia7nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ayushtyagi.innovadia",
+            "certificate_hash": "df4f011eada0cd3563e076488ef319abc82d8080"
+          }
+        },
+        {
+          "client_id": "998733775212-es74blc60ot2bb3kmr96u8e81rbjqcto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVB1WtStjuQfR7mr2_AM-VPXcMDj4zpZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998733775212-es74blc60ot2bb3kmr96u8e81rbjqcto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -44,7 +44,7 @@
 
 
         <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -53,6 +53,7 @@
             />
 
         <TextView
+            android:id="@+id/tvsignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
